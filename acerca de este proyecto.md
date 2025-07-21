@@ -1,6 +1,6 @@
-# Nombre del Proyecto
+# EPE 1
 
-Este repositorio contiene el siguiente proyecto, correspondiente al **laboratorio práctico 1 EPE1, del módulo 1 **, del ramo **Desarrollo Web 1 **, de la carrera de Ingeniería en Informática del IPCHILE**.
+Este repositorio contiene el proyecto EPE 1, correspondiente al **laboratorio práctico, del módulo 1**, del ramo **Desarrollo Web 1 **, de la carrera de Ingeniería en Informática del IPCHILE**.
 
 ## 📌 Descripción
 
