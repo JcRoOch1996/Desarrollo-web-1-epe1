@@ -1,0 +1,117 @@
+/* Estilo para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    /* Fondo gris claro */
+    display: flex;
+    justify-content: center;
+    /* Centrar el formulario horizontalmente */
+    align-items: center;
+    /* Centrar el formulario verticalmente */
+    height: 100vh;
+    /* Altura completa de la ventana */
+    margin: 0;
+    /* Eliminar márgenes predeterminados */
+}
+
+/* Estilo para el contenedor principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* Asegura que el contenedor no se expanda más allá del viewport */
+}
+
+/* Estilo para el formulario de contacto */
+#contactForm {
+    padding: 20px;
+    /* Espaciado interno del formulario */
+    margin: 20px 5vw;
+    /* Margen horizontal del 5% del ancho de la ventana */
+    background-color: bisque;
+    /* Fondo color bisque */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra alrededor del formulario */
+    max-width: 600px;
+    /* Ancho máximo del formulario */
+    width: 100%;
+    /* Asegura que el formulario no se expanda más allá del contenedor */
+}
+
+/* Estilo para mensajes de error */
+.error {
+    color: red;
+    /* Texto rojo */
+    font-size: 0.9em;
+    /* Tamaño de fuente más pequeño */
+}
+
+/* Estilo para los divs dentro del formulario */
+div {
+    margin-bottom: 10px;
+    /* Espaciado entre los elementos del formulario */
+}
+
+/* Estilo para las etiquetas del formulario */
+label {
+    display: block;
+    /* Mostrar como bloque */
+    margin-bottom: 5px;
+    /* Espaciado debajo de la etiqueta */
+}
+
+/* Estilo para los campos de texto y textarea */
+input[type="text"],
+textarea {
+    width: 100%;
+    /* Ancho completo del contenedor */
+    padding: 10px;
+    /* Espaciado interno */
+    border: 1px solid #ccc;
+    /* Borde gris claro */
+    border-radius: 3px;
+    /* Bordes redondeados */
+    box-sizing: border-box;
+    /* Incluir padding y borde en el ancho total */
+}
+
+/* Estilo para el botón de envío */
+button {
+    padding: 10px 20px;
+    /* Espaciado interno */
+    border: none;
+    /* Sin borde */
+    background-color: #5cb85c;
+    /* Fondo verde */
+    color: white;
+    /* Texto blanco */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    border-radius: 3px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cursor de mano */
+}
+
+/* Estilo para el botón al pasar el ratón */
+button:hover {
+    background-color: #4cae4c;
+    /* Fondo verde más oscuro */
+}
+
+/* Estilo para el header */
+header {
+    margin-bottom: 20px;
+    /* Espaciado debajo del header */
+}
+
+/* Estilo para el footer */
+footer {
+    margin-top: 20px;
+    /* Espaciado encima del footer */
+    text-align: center;
+    /* Centrar el texto del footer */
+}

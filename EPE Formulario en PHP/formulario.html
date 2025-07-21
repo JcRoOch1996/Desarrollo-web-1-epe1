@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <!-- Enlace al archivo CSS externo para estilos -->
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validarFormulario() {
+            // Obtener los valores de los campos
+            var nombre = document.getElementById('nombre').value;
+            var email = document.getElementById('email').value;
+            var mensaje = document.getElementById('mensaje').value;
+
+            // Validar el nombre (solo letras y espacios)
+            var nombreRegex = /^[a-zA-Z\s]+$/;
+            if (!nombreRegex.test(nombre)) {
+                alert('El nombre solo puede contener letras y espacios.');
+                return false;
+            }
+
+            // Validar el email (formato de email)
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Por favor, ingrese un email válido.');
+                return false;
+            }
+
+            // Validar el mensaje (no vacío)
+            if (mensaje.trim() === '') {
+                alert('El mensaje no puede estar vacío.');
+                return false;
+            }
+
+            // Si todas las validaciones son correctas, se puede enviar el formulario
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1><strong>Formulario de contacto en PHP</strong></h1>
+        </header>
+        <!-- Formulario de contacto -->
+        <form id="contactForm" action="procesar_formulario.php" method="post" onsubmit="return validarFormulario()">
+            <!-- Campo de entrada para el nombre -->
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <!-- Campo de entrada para el correo electrónico -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!-- Campo de texto para el mensaje -->
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <!-- Botón de envío -->
+            <button type="submit">Enviar</button>
+        </form>
+        <footer>
+            <h6>Esta es una pagina web de prueba</h6>
+        </footer>
+    </main>
+</body>
+
+</html>
